@@ -1,0 +1,81 @@
+cff-version: 1.2.0
+message: "If you use this code, data, or methodology, please cite as below."
+title: "From Qubits to Communities: Hybrid Quantum Coordination for Future Collective Economies"
+authors:
+  - family-names: Sandez
+    given-names: Ariel J.
+    email: asandez@gmail.com
+    affiliation: Independent Researcher
+    orcid: "https://orcid.org/0009-0004-7623-6287"
+    website: "https://www.linkedin.com/in/sandez/"
+abstract: >-
+  We report the first multi-chip hardware execution of an end-to-end
+  quantum-classical coordination pipeline on IBM Heron R2 processors
+  (ibm_fez, ibm_marrakesh, ibm_kingston, 156 qubits each). Task-to-member
+  matching in a 500-agent community economy is executed via a three-stage
+  architecture: AI decomposition, 19-qubit quantum semantic scoring, and
+  classical QUBO assignment. A three-tier regret stratification emerges at
+  benchmark scale: (i) a noiseless ceiling at 1.48% shared by five
+  logical-depth simulator controls and ibm_marrakesh hardware; (ii) a
+  classical-kernel tier at 0.86% via the Shin-Teo-Jeong dequantization
+  framework (the provable RKHS ceiling at logical depth and the deployable
+  classical upgrade today); and (iii) a hardware tier at 0.61% reproduced
+  independently on ibm_fez (2026-04-10) and ibm_kingston (2026-04-16) with
+  identical pretrained parameters. Since the classical kernel's RKHS
+  provably contains the quantum kernel's RKHS at logical depth, the hardware
+  tier accesses a function outside the logical-depth function class.
+  A companion society model with Tier-A realism (age-energy, travel cost,
+  schedules, households, tools, urgency) shows pipeline weight choice is
+  a time-horizon-dependent policy decision, and the QUBO matcher acts as a
+  performative Granovetter machine, manufacturing 80% more weak ties than
+  greedy matching across 10 independent runs (p = 9.1 x 10^-5, d ~ 27).
+keywords:
+  - quantum computing
+  - quantum machine learning
+  - NISQ
+  - IBM Heron R2
+  - QUBO
+  - hybrid quantum-classical
+  - coordination
+  - community economics
+  - algorithmic performativity
+  - multi-agent systems
+  - Shin-Teo-Jeong dequantization
+license: MIT
+version: "1.0.0"
+date-released: 2026-04-16
+repository-code: "https://github.com/asandez1/OrquestIA"
+references:
+  - type: article
+    title: "Quantum Semantic Learning on NISQ Hardware"
+    authors:
+      - family-names: Sandez
+        given-names: Ariel J.
+    year: 2025
+    doi: "10.5281/zenodo.17728126"
+    notes: "Prior work establishing the Q-Manifold Hypothesis."
+  - type: article
+    title: "Dequantizing quantum machine learning models using tensor networks"
+    authors:
+      - family-names: Shin
+        given-names: Sungho
+      - family-names: Teo
+        given-names: Yong Siah
+      - family-names: Jeong
+        given-names: Hyunseok
+    journal: "Physical Review Research"
+    volume: 6
+    issue: 2
+    pages: "023218"
+    year: 2024
+  - type: article
+    title: "A Quantum Approximate Optimization Algorithm"
+    authors:
+      - family-names: Farhi
+        given-names: Edward
+      - family-names: Goldstone
+        given-names: Jeffrey
+      - family-names: Gutmann
+        given-names: Sam
+    year: 2014
+    url: "https://arxiv.org/abs/1411.4028"

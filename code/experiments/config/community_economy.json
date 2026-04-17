@@ -1,0 +1,111 @@
+{
+  "name": "OrquestIA Community Economy",
+  "description": "Template for DCIN computational validation experiments",
+  "version": "1.0",
+
+  "categories": {
+    "electrical": { "base_price": 10.0, "steepness": 1.5 },
+    "plumbing":   { "base_price": 8.0,  "steepness": 1.2 },
+    "tutoring":   { "base_price": 5.0,  "steepness": 1.0 },
+    "transport":  { "base_price": 6.0,  "steepness": 1.3 },
+    "cooking":    { "base_price": 4.0,  "steepness": 0.8 },
+    "childcare":  { "base_price": 7.0,  "steepness": 1.4 }
+  },
+
+  "archetypes": {
+    "multi_skilled_professional": {
+      "weight": 0.25,
+      "skills": ["electrical", "plumbing"],
+      "assets": ["cargo_van", "tool_set"],
+      "time_availability": 0.4,
+      "strategy": "balanced",
+      "bridge_propensity": 0.1,
+      "demand_categories": ["tutoring", "cooking", "childcare", "transport"],
+      "demand_rate": 0.3
+    },
+    "stay_at_home_parent": {
+      "weight": 0.30,
+      "skills": ["cooking", "childcare", "tutoring"],
+      "assets": ["kitchen", "spare_room"],
+      "time_availability": 0.6,
+      "strategy": "credit_accumulator",
+      "bridge_propensity": 0.05,
+      "demand_categories": ["electrical", "plumbing", "transport"],
+      "demand_rate": 0.35
+    },
+    "gig_worker": {
+      "weight": 0.25,
+      "skills": ["transport"],
+      "assets": ["vehicle"],
+      "time_availability": 0.8,
+      "strategy": "high_volume",
+      "bridge_propensity": 0.3,
+      "demand_categories": ["cooking", "childcare", "tutoring", "electrical"],
+      "demand_rate": 0.4
+    },
+    "retiree": {
+      "weight": 0.15,
+      "skills": ["tutoring", "cooking"],
+      "assets": ["workshop", "garden"],
+      "time_availability": 0.9,
+      "strategy": "community_builder",
+      "bridge_propensity": 0.02,
+      "demand_categories": ["electrical", "plumbing", "transport", "childcare"],
+      "demand_rate": 0.25
+    },
+    "adversarial_extractor": {
+      "weight": 0.05,
+      "skills": ["transport"],
+      "assets": [],
+      "time_availability": 0.3,
+      "strategy": "bridge_arbitrage",
+      "bridge_propensity": 0.95,
+      "demand_categories": ["cooking", "tutoring"],
+      "demand_rate": 0.15
+    }
+  },
+
+  "economy": {
+    "protocol_fee": 0.025,
+    "ewma_alpha": 0.1,
+    "demurrage_max": 0.02,
+    "demurrage_velocity_target": 1.0,
+    "demurrage_grace_cycles": 180,
+    "initial_credit_grant": 50.0,
+    "commitment_deposit_fraction": 0.05
+  },
+
+  "treasury": {
+    "initial_fiat_reserves": 10000.0,
+    "min_reserve_ratio": 0.15,
+    "suspended_reserve_ratio": 0.05,
+    "bridge_vesting_cycles": 30,
+    "bridge_monthly_cap": 100.0,
+    "bridge_progressive_discount": [
+      { "threshold": 50, "discount": 0.0 },
+      { "threshold": 100, "discount": 0.10 },
+      { "threshold": 200, "discount": 0.30 },
+      { "threshold": 500, "discount": 0.60 }
+    ]
+  },
+
+  "matching": {
+    "qubo_weights": {
+      "alpha": 0.4,
+      "beta": 0.2,
+      "gamma": 0.1,
+      "delta": 0.3
+    },
+    "skill_gap_threshold": 0.3,
+    "trust_threshold": 0.1,
+    "max_task_load": 3,
+    "qubo_num_reads": 1000,
+    "qubo_penalty_multiplier": 10
+  },
+
+  "simulation_defaults": {
+    "num_members": 500,
+    "num_cycles": 1000,
+    "seed": 42
+  }
+}

@@ -1,0 +1,2560 @@
+{
+  "schema_version": "1.0",
+  "description": "Hardware-benchmark matching instances for Exp 6d / 7 / 7d / 7e / 8. Converted from v1 harvest (community_economy.json, seed=42, cycles [50,100,150,200,250,300,350,400,450,499]) to v2 Pydantic representation. The 9 quantum-relevant member attributes (6 skills + reputation + time_availability + social_capital) are preserved with full fidelity; location/schedule/age/etc. are defaults (not used by the hardware path).",
+  "source_config": "experiments/config/community_economy.json",
+  "source_harvest_function": "experiments.exp6b_hybrid_replication.harvest_instances",
+  "source_simulation_seed": 42,
+  "source_num_members": 30,
+  "source_cycles_sampled": [
+    50,
+    100,
+    150,
+    200,
+    250,
+    300,
+    350,
+    400,
+    450,
+    499
+  ],
+  "n_instances": 8,
+  "instances": [
+    {
+      "instance_id": "inst_0_electrical_cycle50",
+      "category_label": "electrical",
+      "cycle": 50,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "multi_skilled_professional_0000",
+          "archetype": "multi_skilled_professional",
+          "skill_levels": {
+            "electrical": 0.7194392198760262,
+            "plumbing": 0.9292989599556912
+          },
+          "reputation": 1.0,
+          "time_availability": 0.4152358539877216,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.029637667088794135,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "multi_skilled_professional_0001",
+          "archetype": "multi_skilled_professional",
+          "skill_levels": {
+            "electrical": 0.5470886739438248,
+            "plumbing": 0.987811175818378
+          },
+          "reputation": 1.0,
+          "time_availability": 0.44702823581956075,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.02132860524881629,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "multi_skilled_professional_0003",
+          "archetype": "multi_skilled_professional",
+          "skill_levels": {
+            "electrical": 0.6853990121162906,
+            "plumbing": 0.9633824944243009
+          },
+          "reputation": 1.0,
+          "time_availability": 0.357347803621321,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.015014351252452844,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "multi_skilled_professional_0005",
+          "archetype": "multi_skilled_professional",
+          "skill_levels": {
+            "electrical": 0.7772923935079175,
+            "plumbing": 0.5319086280520877
+          },
+          "reputation": 1.0,
+          "time_availability": 0.3570353768558381,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.00910856882361836,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_stay_at_home_parent_0003_50_979cd9",
+          "task_type": {
+            "name": "electrical_000",
+            "category": "electrical",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 8.300237323043104,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "stay_at_home_parent_0003",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "electrical",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 8.300237323043104,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_stay_at_home_parent_0004_50_2c9a1c",
+          "task_type": {
+            "name": "electrical_001",
+            "category": "electrical",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 8.300237323043104,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "stay_at_home_parent_0004",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "electrical",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 8.300237323043104,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_gig_worker_0004_50_432ce1",
+          "task_type": {
+            "name": "electrical_002",
+            "category": "electrical",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 8.300237323043104,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "gig_worker_0004",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "electrical",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 8.300237323043104,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 2,
+          "offer_idx": 0,
+          "task_id": "req_stay_at_home_parent_0003_50_979cd9",
+          "member_id": "multi_skilled_professional_0000",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 2,
+          "offer_idx": 1,
+          "task_id": "req_stay_at_home_parent_0003_50_979cd9",
+          "member_id": "multi_skilled_professional_0001",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 2,
+          "offer_idx": 3,
+          "task_id": "req_stay_at_home_parent_0003_50_979cd9",
+          "member_id": "multi_skilled_professional_0003",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 2,
+          "offer_idx": 4,
+          "task_id": "req_stay_at_home_parent_0003_50_979cd9",
+          "member_id": "multi_skilled_professional_0005",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 0,
+          "task_id": "req_stay_at_home_parent_0004_50_2c9a1c",
+          "member_id": "multi_skilled_professional_0000",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 1,
+          "task_id": "req_stay_at_home_parent_0004_50_2c9a1c",
+          "member_id": "multi_skilled_professional_0001",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 3,
+          "task_id": "req_stay_at_home_parent_0004_50_2c9a1c",
+          "member_id": "multi_skilled_professional_0003",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 4,
+          "task_id": "req_stay_at_home_parent_0004_50_2c9a1c",
+          "member_id": "multi_skilled_professional_0005",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 0,
+          "task_id": "req_gig_worker_0004_50_432ce1",
+          "member_id": "multi_skilled_professional_0000",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 1,
+          "task_id": "req_gig_worker_0004_50_432ce1",
+          "member_id": "multi_skilled_professional_0001",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 3,
+          "task_id": "req_gig_worker_0004_50_432ce1",
+          "member_id": "multi_skilled_professional_0003",
+          "category": "electrical"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 4,
+          "task_id": "req_gig_worker_0004_50_432ce1",
+          "member_id": "multi_skilled_professional_0005",
+          "category": "electrical"
+        }
+      ]
+    },
+    {
+      "instance_id": "inst_1_tutoring_cycle50",
+      "category_label": "tutoring",
+      "cycle": 50,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "stay_at_home_parent_0000",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.9853490121974516,
+            "childcare": 0.9465605606610988,
+            "tutoring": 0.889191748536881
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5659535227798029,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.10557483921211666,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0002",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8723810779539085,
+            "childcare": 0.983754866217105,
+            "tutoring": 0.662912679069076
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6215410501503941,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.11744512653277367,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0004",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.6134546745254421,
+            "childcare": 0.8349069973412552,
+            "tutoring": 0.7185759594361654
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5579921761518736,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.0011922893048585442,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0006",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8412477519874877,
+            "childcare": 0.5698762418046549,
+            "tutoring": 0.5999541012375542
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6109344298364506,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.3455967897356007,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "retiree_0001",
+          "archetype": "retiree",
+          "skill_levels": {
+            "tutoring": 0.8309582573634475,
+            "cooking": 0.7785160761706391
+          },
+          "reputation": 1.0,
+          "time_availability": 0.9071212868035283,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.13555366532497592,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_multi_skilled_professional_0003_50_57de9a",
+          "task_type": {
+            "name": "tutoring_000",
+            "category": "tutoring",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 0.009417500291531556,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "multi_skilled_professional_0003",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "tutoring",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 0.009417500291531556,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_gig_worker_0003_50_3a3ea3",
+          "task_type": {
+            "name": "tutoring_001",
+            "category": "tutoring",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 0.009417500291531556,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "gig_worker_0003",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "tutoring",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 0.009417500291531556,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 1,
+          "offer_idx": 7,
+          "task_id": "req_multi_skilled_professional_0003_50_57de9a",
+          "member_id": "stay_at_home_parent_0000",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 9,
+          "task_id": "req_multi_skilled_professional_0003_50_57de9a",
+          "member_id": "stay_at_home_parent_0002",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 11,
+          "task_id": "req_multi_skilled_professional_0003_50_57de9a",
+          "member_id": "stay_at_home_parent_0004",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 16,
+          "task_id": "req_multi_skilled_professional_0003_50_57de9a",
+          "member_id": "stay_at_home_parent_0006",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 23,
+          "task_id": "req_multi_skilled_professional_0003_50_57de9a",
+          "member_id": "retiree_0001",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 7,
+          "task_id": "req_gig_worker_0003_50_3a3ea3",
+          "member_id": "stay_at_home_parent_0000",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 9,
+          "task_id": "req_gig_worker_0003_50_3a3ea3",
+          "member_id": "stay_at_home_parent_0002",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 11,
+          "task_id": "req_gig_worker_0003_50_3a3ea3",
+          "member_id": "stay_at_home_parent_0004",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 16,
+          "task_id": "req_gig_worker_0003_50_3a3ea3",
+          "member_id": "stay_at_home_parent_0006",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 23,
+          "task_id": "req_gig_worker_0003_50_3a3ea3",
+          "member_id": "retiree_0001",
+          "category": "tutoring"
+        }
+      ]
+    },
+    {
+      "instance_id": "inst_2_childcare_cycle50",
+      "category_label": "childcare",
+      "cycle": 50,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "stay_at_home_parent_0000",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.9853490121974516,
+            "childcare": 0.9465605606610988,
+            "tutoring": 0.889191748536881
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5659535227798029,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.10557483921211666,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0005",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.9161299006976005,
+            "childcare": 0.902382178748401,
+            "tutoring": 0.6937391895150873
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6271577134152597,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.03434221027408547,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0006",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8412477519874877,
+            "childcare": 0.5698762418046549,
+            "tutoring": 0.5999541012375542
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6109344298364506,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.3455967897356007,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0008",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.72945788776917,
+            "childcare": 0.7843705979764468,
+            "tutoring": 0.5698984990638287
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5840164391821349,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.015329210316678188,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_multi_skilled_professional_0002_50_92752b",
+          "task_type": {
+            "name": "childcare_000",
+            "category": "childcare",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 6.2993627097951155,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "multi_skilled_professional_0002",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "childcare",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 6.2993627097951155,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 0,
+          "offer_idx": 6,
+          "task_id": "req_multi_skilled_professional_0002_50_92752b",
+          "member_id": "stay_at_home_parent_0000",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 0,
+          "offer_idx": 13,
+          "task_id": "req_multi_skilled_professional_0002_50_92752b",
+          "member_id": "stay_at_home_parent_0005",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 0,
+          "offer_idx": 15,
+          "task_id": "req_multi_skilled_professional_0002_50_92752b",
+          "member_id": "stay_at_home_parent_0006",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 0,
+          "offer_idx": 19,
+          "task_id": "req_multi_skilled_professional_0002_50_92752b",
+          "member_id": "stay_at_home_parent_0008",
+          "category": "childcare"
+        }
+      ]
+    },
+    {
+      "instance_id": "inst_3_tutoring_cycle100",
+      "category_label": "tutoring",
+      "cycle": 100,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "stay_at_home_parent_0002",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8723810779539085,
+            "childcare": 0.983754866217105,
+            "tutoring": 0.662912679069076
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6215410501503941,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.11744512653277367,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0004",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.6134546745254421,
+            "childcare": 0.8349069973412552,
+            "tutoring": 0.7185759594361654
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5579921761518736,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.0011922893048585442,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0005",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.9161299006976005,
+            "childcare": 0.902382178748401,
+            "tutoring": 0.6937391895150873
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6271577134152597,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.03434221027408547,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0007",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8934621887510692,
+            "childcare": 0.8324254282960161,
+            "tutoring": 0.8525826893131676
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6033789534744446,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.027566982478015978,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "retiree_0001",
+          "archetype": "retiree",
+          "skill_levels": {
+            "tutoring": 0.8309582573634475,
+            "cooking": 0.7785160761706391
+          },
+          "reputation": 1.0,
+          "time_availability": 0.9071212868035283,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.13555366532497592,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_multi_skilled_professional_0002_100_954c42",
+          "task_type": {
+            "name": "tutoring_000",
+            "category": "tutoring",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 0.009417500291531556,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "multi_skilled_professional_0002",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "tutoring",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 0.009417500291531556,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 1,
+          "offer_idx": 3,
+          "task_id": "req_multi_skilled_professional_0002_100_954c42",
+          "member_id": "stay_at_home_parent_0002",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 6,
+          "task_id": "req_multi_skilled_professional_0002_100_954c42",
+          "member_id": "stay_at_home_parent_0004",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 8,
+          "task_id": "req_multi_skilled_professional_0002_100_954c42",
+          "member_id": "stay_at_home_parent_0005",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 11,
+          "task_id": "req_multi_skilled_professional_0002_100_954c42",
+          "member_id": "stay_at_home_parent_0007",
+          "category": "tutoring"
+        },
+        {
+          "req_idx": 1,
+          "offer_idx": 18,
+          "task_id": "req_multi_skilled_professional_0002_100_954c42",
+          "member_id": "retiree_0001",
+          "category": "tutoring"
+        }
+      ]
+    },
+    {
+      "instance_id": "inst_4_transport_cycle100",
+      "category_label": "transport",
+      "cycle": 100,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "gig_worker_0000",
+          "archetype": "gig_worker",
+          "skill_levels": {
+            "transport": 0.8342014808952358
+          },
+          "reputation": 1.0,
+          "time_availability": 0.8747470655617199,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.15790070851817437,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "gig_worker_0003",
+          "archetype": "gig_worker",
+          "skill_levels": {
+            "transport": 0.7796035803727068
+          },
+          "reputation": 0.7750000000000002,
+          "time_availability": 0.829311116567964,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.015585468126769286,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "gig_worker_0005",
+          "archetype": "gig_worker",
+          "skill_levels": {
+            "transport": 0.6072923364097647
+          },
+          "reputation": 0.8050000000000003,
+          "time_availability": 0.7768824103667716,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.02637922182534146,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_stay_at_home_parent_0000_100_38471b",
+          "task_type": {
+            "name": "transport_000",
+            "category": "transport",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 0.002386683551748513,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "stay_at_home_parent_0000",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "transport",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 0.002386683551748513,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_stay_at_home_parent_0002_100_ebf2c4",
+          "task_type": {
+            "name": "transport_001",
+            "category": "transport",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 0.002386683551748513,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "stay_at_home_parent_0002",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "transport",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 0.002386683551748513,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_stay_at_home_parent_0004_100_ee08e9",
+          "task_type": {
+            "name": "transport_002",
+            "category": "transport",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 0.002386683551748513,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "stay_at_home_parent_0004",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "transport",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 0.002386683551748513,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_stay_at_home_parent_0008_100_13069a",
+          "task_type": {
+            "name": "transport_003",
+            "category": "transport",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 0.002386683551748513,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "stay_at_home_parent_0008",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "transport",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 0.002386683551748513,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 2,
+          "offer_idx": 14,
+          "task_id": "req_stay_at_home_parent_0000_100_38471b",
+          "member_id": "gig_worker_0000",
+          "category": "transport"
+        },
+        {
+          "req_idx": 2,
+          "offer_idx": 15,
+          "task_id": "req_stay_at_home_parent_0000_100_38471b",
+          "member_id": "gig_worker_0003",
+          "category": "transport"
+        },
+        {
+          "req_idx": 2,
+          "offer_idx": 16,
+          "task_id": "req_stay_at_home_parent_0000_100_38471b",
+          "member_id": "gig_worker_0005",
+          "category": "transport"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 14,
+          "task_id": "req_stay_at_home_parent_0002_100_ebf2c4",
+          "member_id": "gig_worker_0000",
+          "category": "transport"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 15,
+          "task_id": "req_stay_at_home_parent_0002_100_ebf2c4",
+          "member_id": "gig_worker_0003",
+          "category": "transport"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 16,
+          "task_id": "req_stay_at_home_parent_0002_100_ebf2c4",
+          "member_id": "gig_worker_0005",
+          "category": "transport"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 14,
+          "task_id": "req_stay_at_home_parent_0004_100_ee08e9",
+          "member_id": "gig_worker_0000",
+          "category": "transport"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 15,
+          "task_id": "req_stay_at_home_parent_0004_100_ee08e9",
+          "member_id": "gig_worker_0003",
+          "category": "transport"
+        },
+        {
+          "req_idx": 5,
+          "offer_idx": 16,
+          "task_id": "req_stay_at_home_parent_0004_100_ee08e9",
+          "member_id": "gig_worker_0005",
+          "category": "transport"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 14,
+          "task_id": "req_stay_at_home_parent_0008_100_13069a",
+          "member_id": "gig_worker_0000",
+          "category": "transport"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 15,
+          "task_id": "req_stay_at_home_parent_0008_100_13069a",
+          "member_id": "gig_worker_0003",
+          "category": "transport"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 16,
+          "task_id": "req_stay_at_home_parent_0008_100_13069a",
+          "member_id": "gig_worker_0005",
+          "category": "transport"
+        }
+      ]
+    },
+    {
+      "instance_id": "inst_5_cooking_cycle100",
+      "category_label": "cooking",
+      "cycle": 100,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "stay_at_home_parent_0003",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.734777905637904,
+            "childcare": 0.5947356795421428,
+            "tutoring": 0.5649607526677358
+          },
+          "reputation": 0.7900000000000003,
+          "time_availability": 0.5593113635876061,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.007164213948009341,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0004",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.6134546745254421,
+            "childcare": 0.8349069973412552,
+            "tutoring": 0.7185759594361654
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5579921761518736,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.0011922893048585442,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0006",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8412477519874877,
+            "childcare": 0.5698762418046549,
+            "tutoring": 0.5999541012375542
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6109344298364506,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.3455967897356007,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0007",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8934621887510692,
+            "childcare": 0.8324254282960161,
+            "tutoring": 0.8525826893131676
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6033789534744446,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.027566982478015978,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0008",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.72945788776917,
+            "childcare": 0.7843705979764468,
+            "tutoring": 0.5698984990638287
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5840164391821349,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.015329210316678188,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "retiree_0000",
+          "archetype": "retiree",
+          "skill_levels": {
+            "tutoring": 0.529151370844533,
+            "cooking": 0.6406919460109983
+          },
+          "reputation": 0.8500000000000003,
+          "time_availability": 0.843335639299826,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.02382694823026593,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "retiree_0002",
+          "archetype": "retiree",
+          "skill_levels": {
+            "tutoring": 0.8321567701636938,
+            "cooking": 0.7031934307200353
+          },
+          "reputation": 1.0,
+          "time_availability": 0.9079269845538357,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.16515494096178843,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "retiree_0003",
+          "archetype": "retiree",
+          "skill_levels": {
+            "tutoring": 0.583486459953852,
+            "cooking": 0.5113560365669303
+          },
+          "reputation": 1.0,
+          "time_availability": 0.9228387618778706,
+          "social_capital": 0.0,
+          "max_task_load": 2,
+          "credit_balance": 0.002265142966791549,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "task_type": {
+            "name": "cooking_000",
+            "category": "cooking",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 4.047809881489624,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "gig_worker_0006",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "cooking",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 4.047809881489624,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 9,
+          "offer_idx": 4,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "stay_at_home_parent_0003",
+          "category": "cooking"
+        },
+        {
+          "req_idx": 9,
+          "offer_idx": 5,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "stay_at_home_parent_0004",
+          "category": "cooking"
+        },
+        {
+          "req_idx": 9,
+          "offer_idx": 9,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "stay_at_home_parent_0006",
+          "category": "cooking"
+        },
+        {
+          "req_idx": 9,
+          "offer_idx": 10,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "stay_at_home_parent_0007",
+          "category": "cooking"
+        },
+        {
+          "req_idx": 9,
+          "offer_idx": 12,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "stay_at_home_parent_0008",
+          "category": "cooking"
+        },
+        {
+          "req_idx": 9,
+          "offer_idx": 17,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "retiree_0000",
+          "category": "cooking"
+        },
+        {
+          "req_idx": 9,
+          "offer_idx": 19,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "retiree_0002",
+          "category": "cooking"
+        },
+        {
+          "req_idx": 9,
+          "offer_idx": 20,
+          "task_id": "req_gig_worker_0006_100_0355d6",
+          "member_id": "retiree_0003",
+          "category": "cooking"
+        }
+      ]
+    },
+    {
+      "instance_id": "inst_6_childcare_cycle100",
+      "category_label": "childcare",
+      "cycle": 100,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "stay_at_home_parent_0001",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.7333605018635171,
+            "childcare": 0.5219018828936144,
+            "tutoring": 0.577144746033774
+          },
+          "reputation": 0.7850000000000003,
+          "time_availability": 0.5823933224755885,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.09834305712905558,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0002",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.8723810779539085,
+            "childcare": 0.983754866217105,
+            "tutoring": 0.662912679069076
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6215410501503941,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.11744512653277367,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0005",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.9161299006976005,
+            "childcare": 0.902382178748401,
+            "tutoring": 0.6937391895150873
+          },
+          "reputation": 1.0,
+          "time_availability": 0.6271577134152597,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.03434221027408547,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "stay_at_home_parent_0008",
+          "archetype": "stay_at_home_parent",
+          "skill_levels": {
+            "cooking": 0.72945788776917,
+            "childcare": 0.7843705979764468,
+            "tutoring": 0.5698984990638287
+          },
+          "reputation": 1.0,
+          "time_availability": 0.5840164391821349,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.015329210316678188,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_multi_skilled_professional_0000_100_86537a",
+          "task_type": {
+            "name": "childcare_000",
+            "category": "childcare",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 6.2993627097951155,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "multi_skilled_professional_0000",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "childcare",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 6.2993627097951155,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_gig_worker_0002_100_a38b10",
+          "task_type": {
+            "name": "childcare_001",
+            "category": "childcare",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 6.2993627097951155,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "gig_worker_0002",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "childcare",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 6.2993627097951155,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 0,
+          "offer_idx": 1,
+          "task_id": "req_multi_skilled_professional_0000_100_86537a",
+          "member_id": "stay_at_home_parent_0001",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 0,
+          "offer_idx": 2,
+          "task_id": "req_multi_skilled_professional_0000_100_86537a",
+          "member_id": "stay_at_home_parent_0002",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 0,
+          "offer_idx": 7,
+          "task_id": "req_multi_skilled_professional_0000_100_86537a",
+          "member_id": "stay_at_home_parent_0005",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 0,
+          "offer_idx": 13,
+          "task_id": "req_multi_skilled_professional_0000_100_86537a",
+          "member_id": "stay_at_home_parent_0008",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 8,
+          "offer_idx": 1,
+          "task_id": "req_gig_worker_0002_100_a38b10",
+          "member_id": "stay_at_home_parent_0001",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 8,
+          "offer_idx": 2,
+          "task_id": "req_gig_worker_0002_100_a38b10",
+          "member_id": "stay_at_home_parent_0002",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 8,
+          "offer_idx": 7,
+          "task_id": "req_gig_worker_0002_100_a38b10",
+          "member_id": "stay_at_home_parent_0005",
+          "category": "childcare"
+        },
+        {
+          "req_idx": 8,
+          "offer_idx": 13,
+          "task_id": "req_gig_worker_0002_100_a38b10",
+          "member_id": "stay_at_home_parent_0008",
+          "category": "childcare"
+        }
+      ]
+    },
+    {
+      "instance_id": "inst_7_plumbing_cycle150",
+      "category_label": "plumbing",
+      "cycle": 150,
+      "prices": {
+        "electrical": 8.300237323043104,
+        "plumbing": 3.373491308825389,
+        "tutoring": 0.009417500291531556,
+        "transport": 0.002386683551748513,
+        "cooking": 4.047809881489624,
+        "childcare": 6.2993627097951155
+      },
+      "categories": [
+        "electrical",
+        "plumbing",
+        "tutoring",
+        "transport",
+        "cooking",
+        "childcare"
+      ],
+      "matcher_weights": {
+        "alpha": 0.4,
+        "beta": 0.2,
+        "gamma": 0.1,
+        "delta": 0.3
+      },
+      "members": [
+        {
+          "member_id": "multi_skilled_professional_0000",
+          "archetype": "multi_skilled_professional",
+          "skill_levels": {
+            "electrical": 0.7194392198760262,
+            "plumbing": 0.9292989599556912
+          },
+          "reputation": 1.0,
+          "time_availability": 0.4152358539877216,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.029637667088794135,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "multi_skilled_professional_0004",
+          "archetype": "multi_skilled_professional",
+          "skill_levels": {
+            "electrical": 0.911380806635415,
+            "plumbing": 0.7217070994136656
+          },
+          "reputation": 1.0,
+          "time_availability": 0.4033015348780608,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.03776193378438375,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        },
+        {
+          "member_id": "multi_skilled_professional_0005",
+          "archetype": "multi_skilled_professional",
+          "skill_levels": {
+            "electrical": 0.7772923935079175,
+            "plumbing": 0.5319086280520877
+          },
+          "reputation": 1.0,
+          "time_availability": 0.3570353768558381,
+          "social_capital": 0.0,
+          "max_task_load": 1,
+          "credit_balance": 0.00910856882361836,
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "schedule": {
+            "days": {},
+            "default_day": {
+              "commitments": []
+            }
+          },
+          "age": 35,
+          "energy": 8.5,
+          "household_id": "",
+          "tools": [],
+          "vehicle": "none",
+          "energy_capacity": 9.25,
+          "recovery_rate": 0.9625,
+          "preferred_hours": [
+            0.0,
+            24.0
+          ]
+        }
+      ],
+      "tasks": [
+        {
+          "task_id": "req_stay_at_home_parent_0004_150_f84b5a",
+          "task_type": {
+            "name": "plumbing_000",
+            "category": "plumbing",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 3.373491308825389,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "stay_at_home_parent_0004",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "plumbing",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 3.373491308825389,
+          "duration": 1.0
+        },
+        {
+          "task_id": "req_retiree_0003_150_6b501c",
+          "task_type": {
+            "name": "plumbing_001",
+            "category": "plumbing",
+            "effort": {
+              "duration_hours": 1.0,
+              "credit_cost": 3.373491308825389,
+              "min_skill": 0.3,
+              "min_trust": 0.3,
+              "energy_cost": 1.0,
+              "min_age": 0,
+              "max_age": 120,
+              "required_tools": [],
+              "required_vehicle": "none"
+            }
+          },
+          "time_window": {
+            "start": 36,
+            "end": 60
+          },
+          "location": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "requester_id": "retiree_0003",
+          "requester_reputation": 0.5,
+          "weekday": 0,
+          "urgency": 0.5,
+          "deadline_block": 96,
+          "required_skill": "plumbing",
+          "min_skill": 0.3,
+          "min_trust": 0.3,
+          "price": 3.373491308825389,
+          "duration": 1.0
+        }
+      ],
+      "eligible_pair_refs": [
+        {
+          "req_idx": 3,
+          "offer_idx": 0,
+          "task_id": "req_stay_at_home_parent_0004_150_f84b5a",
+          "member_id": "multi_skilled_professional_0000",
+          "category": "plumbing"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 3,
+          "task_id": "req_stay_at_home_parent_0004_150_f84b5a",
+          "member_id": "multi_skilled_professional_0004",
+          "category": "plumbing"
+        },
+        {
+          "req_idx": 3,
+          "offer_idx": 4,
+          "task_id": "req_stay_at_home_parent_0004_150_f84b5a",
+          "member_id": "multi_skilled_professional_0005",
+          "category": "plumbing"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 0,
+          "task_id": "req_retiree_0003_150_6b501c",
+          "member_id": "multi_skilled_professional_0000",
+          "category": "plumbing"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 3,
+          "task_id": "req_retiree_0003_150_6b501c",
+          "member_id": "multi_skilled_professional_0004",
+          "category": "plumbing"
+        },
+        {
+          "req_idx": 6,
+          "offer_idx": 4,
+          "task_id": "req_retiree_0003_150_6b501c",
+          "member_id": "multi_skilled_professional_0005",
+          "category": "plumbing"
+        }
+      ]
+    }
+  ]
+}

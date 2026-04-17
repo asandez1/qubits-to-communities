@@ -1,0 +1,155 @@
+{
+  "experiment": "exp7c_routing_depth",
+  "backend_proxy": "FakeTorino",
+  "backend_qubits": 133,
+  "n_trajectories": 5,
+  "seed_base": 0,
+  "shots": 4096,
+  "opt_level": 3,
+  "device": "GPU",
+  "transpiled_depth_range": [
+    157,
+    238
+  ],
+  "transpiled_depth_mean": 204.01538461538462,
+  "active_qubits_range": [
+    19,
+    22
+  ],
+  "noiseless_compact_regret": 0.014757738264375004,
+  "mean_regret_per_trajectory": [
+    0.014757738264375004,
+    0.014757738264375004,
+    0.014757738264375004,
+    0.014757738264375004,
+    0.014757738264375004
+  ],
+  "per_instance_regrets": [
+    [
+      0.0,
+      0.0,
+      0.013797204483483526,
+      0.06906565735300918,
+      0.0,
+      0.035199044278507334,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.013797204483483526,
+      0.06906565735300918,
+      0.0,
+      0.035199044278507334,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.013797204483483526,
+      0.06906565735300918,
+      0.0,
+      0.035199044278507334,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.013797204483483526,
+      0.06906565735300918,
+      0.0,
+      0.035199044278507334,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.013797204483483526,
+      0.06906565735300918,
+      0.0,
+      0.035199044278507334,
+      0.0,
+      0.0
+    ]
+  ],
+  "per_instance_co_optimal": [
+    [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ],
+    [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      true,
+      true
+    ]
+  ],
+  "aggregate": {
+    "mean": 0.014757738264375004,
+    "std": 0.0,
+    "median": 0.014757738264375004,
+    "min": 0.014757738264375004,
+    "max": 0.014757738264375004,
+    "per_instance_co_opt_prob": [
+      1.0,
+      1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0
+    ]
+  },
+  "references": {
+    "arm_a_noiseless": 0.0148,
+    "arm_b_logical_depth_noisy": 0.0148,
+    "kc_classical_kernel": 0.0086,
+    "ibm_fez_hardware": 0.0061,
+    "ibm_marrakesh_hardware": 0.0148
+  }
+}

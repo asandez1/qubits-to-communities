@@ -1,0 +1,339 @@
+{
+  "architecture": "V3-extended: 19 qubits, 9D per vector",
+  "n_params": 57,
+  "n_train_pairs": null,
+  "simulator": {
+    "mean_sim_correlation_9d": -0.20604168836828676,
+    "mean_classical_regret": 0.014757738264375004,
+    "n_co_optimal": 5,
+    "n_identical": 1,
+    "per_instance": [
+      {
+        "instance_idx": 0,
+        "category": "electrical",
+        "n_pairs": 12,
+        "sim_correlation_9d": -0.08522309772953654,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.510986328125,
+          "1": 0.499267578125,
+          "2": 0.494140625,
+          "3": 0.50439453125,
+          "4": 0.505615234375,
+          "5": 0.485595703125,
+          "6": 0.4921875,
+          "7": 0.4775390625,
+          "8": 0.49462890625,
+          "9": 0.502685546875,
+          "10": 0.491455078125,
+          "11": 0.498291015625
+        }
+      },
+      {
+        "instance_idx": 1,
+        "category": "tutoring",
+        "n_pairs": 10,
+        "sim_correlation_9d": 0.03913029189277947,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.5029296875,
+          "1": 0.500244140625,
+          "2": 0.501708984375,
+          "3": 0.505859375,
+          "4": 0.49267578125,
+          "5": 0.501220703125,
+          "6": 0.5087890625,
+          "7": 0.518310546875,
+          "8": 0.501953125,
+          "9": 0.515380859375
+        }
+      },
+      {
+        "instance_idx": 2,
+        "category": "childcare",
+        "n_pairs": 4,
+        "sim_correlation_9d": -0.8173280245401671,
+        "classical_regret": 0.013797204483483526,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.506591796875,
+          "1": 0.50341796875,
+          "2": 0.50732421875,
+          "3": 0.5048828125
+        }
+      },
+      {
+        "instance_idx": 3,
+        "category": "tutoring",
+        "n_pairs": 5,
+        "sim_correlation_9d": -0.22073338947355647,
+        "classical_regret": 0.06906565735300918,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.51123046875,
+          "1": 0.500732421875,
+          "2": 0.49755859375,
+          "3": 0.5078125,
+          "4": 0.50244140625
+        }
+      },
+      {
+        "instance_idx": 4,
+        "category": "transport",
+        "n_pairs": 12,
+        "sim_correlation_9d": 0.34668375732054346,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.514892578125,
+          "1": 0.512451171875,
+          "2": 0.511474609375,
+          "3": 0.503173828125,
+          "4": 0.505615234375,
+          "5": 0.481201171875,
+          "6": 0.49658203125,
+          "7": 0.503662109375,
+          "8": 0.497802734375,
+          "9": 0.50634765625,
+          "10": 0.50634765625,
+          "11": 0.50927734375
+        }
+      },
+      {
+        "instance_idx": 5,
+        "category": "cooking",
+        "n_pairs": 8,
+        "sim_correlation_9d": -0.5659058130201255,
+        "classical_regret": 0.035199044278507334,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.49609375,
+          "1": 0.51025390625,
+          "2": 0.5,
+          "3": 0.501708984375,
+          "4": 0.509033203125,
+          "5": 0.505615234375,
+          "6": 0.50341796875,
+          "7": 0.51953125
+        }
+      },
+      {
+        "instance_idx": 6,
+        "category": "childcare",
+        "n_pairs": 8,
+        "sim_correlation_9d": 0.24820146543922345,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.489501953125,
+          "1": 0.506103515625,
+          "2": 0.494873046875,
+          "3": 0.505615234375,
+          "4": 0.510009765625,
+          "5": 0.5048828125,
+          "6": 0.514892578125,
+          "7": 0.499267578125
+        }
+      },
+      {
+        "instance_idx": 7,
+        "category": "plumbing",
+        "n_pairs": 6,
+        "sim_correlation_9d": -0.5931586968354547,
+        "classical_regret": 0.0,
+        "identical": true,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.494873046875,
+          "1": 0.500732421875,
+          "2": 0.5,
+          "3": 0.490234375,
+          "4": 0.488037109375,
+          "5": 0.51025390625
+        }
+      }
+    ]
+  },
+  "hardware": {
+    "mean_sim_correlation_9d": 0.0962904758058819,
+    "mean_classical_regret": 0.006124531095248857,
+    "n_co_optimal": 6,
+    "n_identical": 2,
+    "hw_meta": {
+      "job_id": "d7gk1hjjne2c73930130",
+      "hw_time": 85.75342774391174,
+      "depth_range": [
+        157,
+        238
+      ]
+    },
+    "per_instance": [
+      {
+        "instance_idx": 0,
+        "category": "electrical",
+        "n_pairs": 12,
+        "sim_correlation_9d": 0.2499808008457164,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.4931640625,
+          "1": 0.498779296875,
+          "2": 0.509765625,
+          "3": 0.503662109375,
+          "4": 0.490966796875,
+          "5": 0.49609375,
+          "6": 0.48046875,
+          "7": 0.498046875,
+          "8": 0.517333984375,
+          "9": 0.489013671875,
+          "10": 0.503662109375,
+          "11": 0.5029296875
+        }
+      },
+      {
+        "instance_idx": 1,
+        "category": "tutoring",
+        "n_pairs": 10,
+        "sim_correlation_9d": -0.050790890683156995,
+        "classical_regret": 0.0,
+        "identical": true,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.52734375,
+          "1": 0.510498046875,
+          "2": 0.52001953125,
+          "3": 0.5126953125,
+          "4": 0.542724609375,
+          "5": 0.496337890625,
+          "6": 0.5458984375,
+          "7": 0.50048828125,
+          "8": 0.521728515625,
+          "9": 0.50390625
+        }
+      },
+      {
+        "instance_idx": 2,
+        "category": "childcare",
+        "n_pairs": 4,
+        "sim_correlation_9d": -0.09964458542463236,
+        "classical_regret": 0.013797204483483526,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.5576171875,
+          "1": 0.517578125,
+          "2": 0.509521484375,
+          "3": 0.507568359375
+        }
+      },
+      {
+        "instance_idx": 3,
+        "category": "tutoring",
+        "n_pairs": 5,
+        "sim_correlation_9d": 0.018618955702809404,
+        "classical_regret": 0.0,
+        "identical": true,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.52734375,
+          "1": 0.51611328125,
+          "2": 0.5185546875,
+          "3": 0.482421875,
+          "4": 0.53076171875
+        }
+      },
+      {
+        "instance_idx": 4,
+        "category": "transport",
+        "n_pairs": 12,
+        "sim_correlation_9d": 0.5253596853332091,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.5263671875,
+          "1": 0.536865234375,
+          "2": 0.49853515625,
+          "3": 0.53271484375,
+          "4": 0.521728515625,
+          "5": 0.511962890625,
+          "6": 0.52197265625,
+          "7": 0.498046875,
+          "8": 0.51220703125,
+          "9": 0.515869140625,
+          "10": 0.510986328125,
+          "11": 0.4970703125
+        }
+      },
+      {
+        "instance_idx": 5,
+        "category": "cooking",
+        "n_pairs": 8,
+        "sim_correlation_9d": 0.176869401830494,
+        "classical_regret": 0.035199044278507334,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.51318359375,
+          "1": 0.5009765625,
+          "2": 0.51123046875,
+          "3": 0.51708984375,
+          "4": 0.49560546875,
+          "5": 0.501708984375,
+          "6": 0.505126953125,
+          "7": 0.515869140625
+        }
+      },
+      {
+        "instance_idx": 6,
+        "category": "childcare",
+        "n_pairs": 8,
+        "sim_correlation_9d": -0.5036933638834904,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.512939453125,
+          "1": 0.51123046875,
+          "2": 0.50341796875,
+          "3": 0.5048828125,
+          "4": 0.514892578125,
+          "5": 0.49365234375,
+          "6": 0.516357421875,
+          "7": 0.51220703125
+        }
+      },
+      {
+        "instance_idx": 7,
+        "category": "plumbing",
+        "n_pairs": 6,
+        "sim_correlation_9d": 0.45362380272610603,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.533935546875,
+          "1": 0.499755859375,
+          "2": 0.51220703125,
+          "3": 0.5009765625,
+          "4": 0.5078125,
+          "5": 0.500244140625
+        }
+      }
+    ]
+  },
+  "verdict": "NO \u2014 dim reduction was not the sole issue",
+  "backend": "ibm_kingston",
+  "theta_source": "/home/qstar/AI/OrquestIA/experiments/results/exp6d/theta.npy",
+  "harvest_seed": 42
+}

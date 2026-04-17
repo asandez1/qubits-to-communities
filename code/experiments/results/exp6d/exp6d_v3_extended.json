@@ -1,0 +1,182 @@
+{
+  "architecture": "V3-extended: 19 qubits, 9D per vector",
+  "n_params": 57,
+  "n_train_pairs": 80,
+  "simulator": {
+    "mean_sim_correlation_9d": -0.1555159144438164,
+    "mean_classical_regret": 0.014757738264375004,
+    "n_co_optimal": 5,
+    "n_identical": 2,
+    "per_instance": [
+      {
+        "instance_idx": 0,
+        "category": "electrical",
+        "n_pairs": 12,
+        "sim_correlation_9d": 0.028189737815670815,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.500244140625,
+          "1": 0.49658203125,
+          "2": 0.503662109375,
+          "3": 0.504638671875,
+          "4": 0.499267578125,
+          "5": 0.48876953125,
+          "6": 0.499755859375,
+          "7": 0.503662109375,
+          "8": 0.495849609375,
+          "9": 0.496826171875,
+          "10": 0.497314453125,
+          "11": 0.480224609375
+        }
+      },
+      {
+        "instance_idx": 1,
+        "category": "tutoring",
+        "n_pairs": 10,
+        "sim_correlation_9d": -0.342809347148071,
+        "classical_regret": 0.0,
+        "identical": true,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.492431640625,
+          "1": 0.5146484375,
+          "2": 0.492919921875,
+          "3": 0.506591796875,
+          "4": 0.495361328125,
+          "5": 0.519775390625,
+          "6": 0.499755859375,
+          "7": 0.5068359375,
+          "8": 0.515380859375,
+          "9": 0.50439453125
+        }
+      },
+      {
+        "instance_idx": 2,
+        "category": "childcare",
+        "n_pairs": 4,
+        "sim_correlation_9d": -0.4611369570455214,
+        "classical_regret": 0.013797204483483526,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.508544921875,
+          "1": 0.510009765625,
+          "2": 0.504150390625,
+          "3": 0.487060546875
+        }
+      },
+      {
+        "instance_idx": 3,
+        "category": "tutoring",
+        "n_pairs": 5,
+        "sim_correlation_9d": -0.2158362173200622,
+        "classical_regret": 0.06906565735300918,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.498291015625,
+          "1": 0.49951171875,
+          "2": 0.5087890625,
+          "3": 0.513427734375,
+          "4": 0.497802734375
+        }
+      },
+      {
+        "instance_idx": 4,
+        "category": "transport",
+        "n_pairs": 12,
+        "sim_correlation_9d": 0.012212954967561218,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.520751953125,
+          "1": 0.511962890625,
+          "2": 0.519775390625,
+          "3": 0.5078125,
+          "4": 0.506591796875,
+          "5": 0.500244140625,
+          "6": 0.49560546875,
+          "7": 0.516357421875,
+          "8": 0.50732421875,
+          "9": 0.49951171875,
+          "10": 0.500244140625,
+          "11": 0.503173828125
+        }
+      },
+      {
+        "instance_idx": 5,
+        "category": "cooking",
+        "n_pairs": 8,
+        "sim_correlation_9d": -0.7040602160850995,
+        "classical_regret": 0.035199044278507334,
+        "identical": false,
+        "q_is_co_optimal": false,
+        "v3_similarities": {
+          "0": 0.486328125,
+          "1": 0.506103515625,
+          "2": 0.4951171875,
+          "3": 0.50439453125,
+          "4": 0.5,
+          "5": 0.496337890625,
+          "6": 0.503662109375,
+          "7": 0.51025390625
+        }
+      },
+      {
+        "instance_idx": 6,
+        "category": "childcare",
+        "n_pairs": 8,
+        "sim_correlation_9d": 0.28764129604312444,
+        "classical_regret": 0.0,
+        "identical": false,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.497802734375,
+          "1": 0.50634765625,
+          "2": 0.4990234375,
+          "3": 0.500244140625,
+          "4": 0.501220703125,
+          "5": 0.49755859375,
+          "6": 0.509521484375,
+          "7": 0.50439453125
+        }
+      },
+      {
+        "instance_idx": 7,
+        "category": "plumbing",
+        "n_pairs": 6,
+        "sim_correlation_9d": 0.15167143322186624,
+        "classical_regret": 0.0,
+        "identical": true,
+        "q_is_co_optimal": true,
+        "v3_similarities": {
+          "0": 0.50244140625,
+          "1": 0.5087890625,
+          "2": 0.49560546875,
+          "3": 0.49951171875,
+          "4": 0.498779296875,
+          "5": 0.50048828125
+        }
+      }
+    ]
+  },
+  "hardware": {
+    "_note": "Aggregate values restored from earlier session captures after a later --skip-hardware run overwrote this field. Per-instance hardware measurements are not recoverable from current artifacts; paper Section 10.4.4 and CLAUDE.md are the canonical sources for these numbers.",
+    "mean_sim_correlation_9d": 0.1384450518948064,
+    "mean_classical_regret": 0.006124531095248857,
+    "n_co_optimal": 6,
+    "n_identical": 3,
+    "hw_meta": {
+      "job_id": "d7eh2k3klj2c73f2ovbg",
+      "hw_time": 88.6885838508606,
+      "depth_range": [167, 270],
+      "backend": "ibm_fez",
+      "shots": 4096
+    },
+    "per_instance": null
+  },
+  "verdict": "YES \u2014 19q/9D scaling recovered the hybrid pipeline on ibm_fez (6/8 co-opt, 0.61% regret); not reproduced on ibm_marrakesh (5/8, 1.48%); mechanism pending multi-seed replication (see Exp 7 \u00a710.4.5)"
+}

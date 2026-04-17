@@ -1,0 +1,33 @@
+{
+  "experiment": "Exp 7e: Classical Baselines",
+  "models": [
+    "lgbm",
+    "gnn",
+    "kc_18d"
+  ],
+  "reference_arm_d_9d": {
+    "regret": 0.0086,
+    "co_optimal": 7,
+    "identical": 6
+  },
+  "results": {
+    "lgbm": {
+      "mean_classical_regret": 0.014757738264375004,
+      "n_co_optimal": 5,
+      "n_identical": 4,
+      "mean_sim_correlation_9d": NaN
+    },
+    "gnn": {
+      "mean_classical_regret": 0.014757738264375004,
+      "n_co_optimal": 5,
+      "n_identical": 4,
+      "mean_sim_correlation_9d": -0.14296641940939564
+    },
+    "kc_18d": {
+      "mean_classical_regret": 0.017407358912860223,
+      "n_co_optimal": 5,
+      "n_identical": 4,
+      "mean_sim_correlation_9d": 0.49107716208289265
+    }
+  }
+}

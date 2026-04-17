@@ -1,0 +1,32 @@
+# From Qubits to Communities — reproducibility requirements
+# Tested on Python 3.12.0 / Linux 6.17 / RTX 5090 / CUDA 12.x
+
+# Core numerics
+numpy>=2.0,<3
+scipy>=1.13,<2
+pandas>=2.0,<3
+pydantic>=2.9,<3
+
+# Classical QUBO solver
+dwave-neal>=0.6,<1
+
+# Qiskit stack — version triplet verified compatible 2026-04-16
+qiskit>=1.4,<2
+qiskit-aer-gpu==0.15.1
+qiskit-ibm-runtime==0.40.1
+
+# Visualization
+matplotlib>=3.8,<4
+seaborn>=0.13,<1
+
+# Classical ML baselines (Phase 2F)
+lightgbm>=4.0,<5
+scikit-learn>=1.5,<2
+torch>=2.5,<3
+
+# Graph analytics (performativity)
+networkx>=3.0,<4
+python-louvain>=0.16
+
+# Experiment utilities
+tqdm>=4.66,<5

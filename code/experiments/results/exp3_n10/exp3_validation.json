@@ -1,0 +1,157 @@
+{
+  "num_runs": 10,
+  "num_members": 500,
+  "num_cycles": 1000,
+  "bridge_counts": {
+    "random": [
+      21437,
+      21870,
+      21909,
+      21694,
+      21796,
+      21571,
+      22195,
+      21711,
+      21522,
+      20935
+    ],
+    "greedy": [
+      8233,
+      8167,
+      8220,
+      7912,
+      8121,
+      8074,
+      8313,
+      8035,
+      8149,
+      8179
+    ],
+    "qubo": [
+      14659,
+      14642,
+      14167,
+      14936,
+      15074,
+      14947,
+      14014,
+      14559,
+      14787,
+      14652
+    ]
+  },
+  "bridge_means": {
+    "random": 21664.0,
+    "greedy": 8140.3,
+    "qubo": 14643.7
+  },
+  "bridge_stds": {
+    "random": 318.86329359147004,
+    "greedy": 107.25395097617617,
+    "qubo": 318.4914598541066
+  },
+  "mann_whitney_qubo_vs_random": {
+    "statistic": 0.0,
+    "p_value": 0.9999325785388228,
+    "significant": "False"
+  },
+  "mann_whitney_qubo_vs_greedy": {
+    "statistic": 100.0,
+    "p_value": 9.133589555477501e-05,
+    "significant": "True"
+  },
+  "performativity_index": {
+    "random": {
+      "pi": 0.830623717997417,
+      "bridges": 21867,
+      "edges": 26326,
+      "random_baseline": 0.21103006012024048
+    },
+    "greedy": {
+      "pi": 0.5340023768651789,
+      "bridges": 8088,
+      "edges": 15146,
+      "random_baseline": 0.12141082164328658
+    },
+    "qubo": {
+      "pi": 0.7977502938049136,
+      "bridges": 14255,
+      "edges": 17869,
+      "random_baseline": 0.14323847695390782
+    }
+  },
+  "pi_ratio_qubo_random": 0.9604232055018135,
+  "pi_pass": false,
+  "bridge_significant": true,
+  "overall_pass": false,
+  "wall_times": {
+    "random": [
+      50.5,
+      45.6,
+      39.7,
+      50.6,
+      44.6,
+      33.4,
+      47.6,
+      49.7,
+      49.2,
+      49.4
+    ],
+    "greedy": [
+      79.9,
+      74.1,
+      70.6,
+      72.3,
+      81.8,
+      69.9,
+      89.7,
+      84.0,
+      81.4,
+      84.6
+    ],
+    "qubo": [
+      8189.6,
+      8184.4,
+      8194.3,
+      8193.5,
+      8178.2,
+      8181.7,
+      8215.0,
+      8186.3,
+      8193.8,
+      8193.7
+    ]
+  },
+  "topology_comparison": {
+    "greedy": {
+      "num_nodes": 500,
+      "num_edges": 15146,
+      "clustering_coefficient": 0.1844,
+      "inter_cluster_bridges": 8185,
+      "modularity": 0.2004,
+      "average_path_length": 1.9988,
+      "num_communities": 3,
+      "density": 0.1214
+    },
+    "qubo": {
+      "num_nodes": 500,
+      "num_edges": 17869,
+      "clustering_coefficient": 0.2435,
+      "inter_cluster_bridges": 14580,
+      "modularity": 0.0711,
+      "average_path_length": 1.949,
+      "num_communities": 8,
+      "density": 0.1432
+    },
+    "random": {
+      "num_nodes": 500,
+      "num_edges": 26326,
+      "clustering_coefficient": 0.1492,
+      "inter_cluster_bridges": 22240,
+      "modularity": 0.0692,
+      "average_path_length": 1.8021,
+      "num_communities": 10,
+      "density": 0.211
+    }
+  }
+}
