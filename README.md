@@ -4,7 +4,7 @@
 
 **Author:** Ariel J. Sandez
 **Release date:** 2026-04-16
-**DOI:** *(assigned by Zenodo on publication)*
+**DOI:** *Pending — Zenodo is minting after v1.0.2 release. Check https://zenodo.org/me/uploads for the live record.*
 
 ![Three-tier regret stratification — noiseless ceiling, classical-kernel tier, hardware tier](paper/figures/fig3_stratification.png)
 
