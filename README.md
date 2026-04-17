@@ -6,6 +6,14 @@
 **Release date:** 2026-04-16
 **DOI:** *(assigned by Zenodo on publication)*
 
+![Three-tier regret stratification — noiseless ceiling, classical-kernel tier, hardware tier](paper/figures/fig3_stratification.png)
+
+*The paper's headline result: a three-tier regret stratification on 8 benchmark
+matching instances with a fixed pretrained θ. Five simulator controls + ibm_marrakesh
+hardware collapse onto the 1.48% noiseless ceiling; the Shin–Teo–Jeong classical
+kernel $K_c$ reaches 0.86% (provable RKHS ceiling at logical depth); ibm_fez
+and ibm_kingston independently reach 0.61% — outside the logical-depth RKHS.*
+
 ---
 
 ## What's in this package
@@ -64,6 +72,17 @@ zenodo_release/
         ├── exp2e_ltier/exp9_l.json  ← L-tier scaling (Phase 2E)
         └── exp3_n10/exp3_validation.json    Performativity at n=10 runs (Phase 2C)
 ```
+
+![Society model overview — member glyphs, geographic snapshot, cycle engine, and balance trajectories](paper/figures/fig4_society.png)
+
+*The OrquestIA society model used for Phase 2 experiments (2B, 2D, 2E, 2G).
+**Top-left**: member glyph anatomy — size encodes age-derived energy capacity,
+color encodes primary skill, marker shape encodes vehicle type.
+**Top-center**: 12 members on a 10×10 km grid with sample tasks.
+**Top-right**: the seven-step `CycleEngine.advance()` pipeline.
+**Bottom**: snapshots across cycles + a `balance_series('E1')` query showing
+individual member credit trajectories. See `paper/SOCIETY_MODEL.md` for the
+full Pydantic v2 domain specification.*
 
 ### Architecture note: v2 unification + v1-compat bridge
 
