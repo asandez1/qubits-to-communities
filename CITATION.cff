@@ -42,9 +42,15 @@ keywords:
   - multi-agent systems
   - Shin-Teo-Jeong dequantization
 license: MIT
-version: "1.0.0"
+version: "1.0.2"
 date-released: 2026-04-16
-repository-code: "https://github.com/asandez1/OrquestIA"
+doi: "10.5281/zenodo.19621883"
+repository-code: "https://github.com/asandez1/qubits-to-communities"
+url: "https://doi.org/10.5281/zenodo.19621883"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.19621883"
+    description: "Zenodo archive of the reproducibility package (v1.0.2 and later releases)."
 references:
   - type: article
     title: "Quantum Semantic Learning on NISQ Hardware"

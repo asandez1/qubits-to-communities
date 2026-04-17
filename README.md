@@ -4,7 +4,10 @@
 
 **Author:** Ariel J. Sandez
 **Release date:** 2026-04-16
-**DOI:** *Pending — Zenodo is minting after v1.0.2 release. Check https://zenodo.org/me/uploads for the live record.*
+**DOI:** [10.5281/zenodo.19621883](https://doi.org/10.5281/zenodo.19621883)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19621883.svg)](https://doi.org/10.5281/zenodo.19621883)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ![Three-tier regret stratification — noiseless ceiling, classical-kernel tier, hardware tier](paper/figures/fig3_stratification.png)
 
@@ -122,7 +125,22 @@ If you use this code, data, or methodology, please cite:
 
 ```
 Sandez, A. J. (2026). From Qubits to Communities: Hybrid Quantum Coordination
-for Future Collective Economies. Zenodo. DOI: <assigned on publication>
+for Future Collective Economies. Zenodo. https://doi.org/10.5281/zenodo.19621883
+```
+
+BibTeX:
+
+```bibtex
+@software{sandez_2026_qubits_to_communities,
+  author       = {Sandez, Ariel J.},
+  title        = {{From Qubits to Communities: Hybrid Quantum
+                   Coordination for Future Collective Economies}},
+  month        = apr,
+  year         = 2026,
+  publisher    = {Zenodo},
+  doi          = {10.5281/zenodo.19621883},
+  url          = {https://doi.org/10.5281/zenodo.19621883}
+}
 ```
 
 BibTeX in `CITATION.cff` (auto-renderable by GitHub and many publishers).
